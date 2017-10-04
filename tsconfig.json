@@ -19,6 +19,11 @@
       "dom"
     ]
   },
+  "files": [
+    "src/app/app.module.ts",
+    "src/main.ts",
+    "src/index.ts"
+  ],
   "exclude": [
     "node_modules",
     "dist",
