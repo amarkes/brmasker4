@@ -1,6 +1,6 @@
 {
   "name": "brmasker4",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "packagr":"ng-packagr -p ng-package.json",
-    "pu":"npm run build && npm publish dist"
+    "pu":"npm run packagr && npm publish dist"
     
   },
   "private": false,
