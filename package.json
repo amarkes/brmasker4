@@ -1,6 +1,6 @@
 {
   "name": "brmasker4",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "license": "MIT",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",

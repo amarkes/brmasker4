@@ -21,6 +21,8 @@
   },
   "files": [
     "src/app/app.module.ts",
+    "src/app/directives/index.ts",
+    "src/app/directives/brmasker/index.ts",
     "src/main.ts",
     "src/index.ts"
   ],

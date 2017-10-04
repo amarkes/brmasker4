@@ -4,7 +4,7 @@ import { Directive, Input, HostListener } from '@angular/core';
   selector: '[brmasker]',
 })
 export class BrmaskerDirective {
-  @Input() brmasker: any;
+  @Input('brmasker') brmasker: any;
   @HostListener('keyup', ['$event'])
   inputChanged(event: any): void {
     if (event.target.value) {
