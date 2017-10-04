@@ -57,7 +57,7 @@ export class BrmaskerDirective {
 }
 BrmaskerDirective.decorators = [
     { type: Directive, args: [{
-                selector: '[brmasker]' // Attribute selector
+                selector: '[brmasker]'
             },] },
 ];
 /**
@@ -65,7 +65,7 @@ BrmaskerDirective.decorators = [
  */
 BrmaskerDirective.ctorParameters = () => [];
 BrmaskerDirective.propDecorators = {
-    'brmasker': [{ type: Input, args: ['brmasker',] },],
+    'brmasker': [{ type: Input },],
     'inputChanged': [{ type: HostListener, args: ['keyup', ['$event'],] },],
 };
 function BrmaskerDirective_tsickle_Closure_declarations() {

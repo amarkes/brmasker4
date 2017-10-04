@@ -1,9 +1,9 @@
 import { Directive, Input, HostListener } from '@angular/core';
 @Directive({
-  selector: '[brmasker]' // Attribute selector
+  selector: '[brmasker]'
 })
 export class BrmaskerDirective {
-  @Input('brmasker') brmasker: any;
+  @Input() brmasker: any;
   @HostListener('keyup', ['$event'])
   inputChanged(event: any): void {
     if (event.target.value) {
@@ -12,14 +12,14 @@ export class BrmaskerDirective {
   }
   constructor() {
   }
-  private onInput(value: any): void {
+  onInput(value: any): string {
     const ret = this.formataCampo(value, this.brmasker.mask, this.brmasker.len);
     return ret;
     // if (ret) {
     //   this.element.nativeElement.value = ret;
     // }
   }
-  private formataCampo(campo: string, Mascara: string, tamanho: number): any {
+  formataCampo(campo: string, Mascara: string, tamanho: number): string {
     let boleanoMascara;
     const exp = /\-|\.|\/|\(|\)|\,|\*|\+|\@|\#|\R|\$|\&|\%| /g;
     const campoSoNumeros = campo.toString().replace( exp, '' );

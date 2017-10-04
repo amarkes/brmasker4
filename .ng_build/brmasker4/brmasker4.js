@@ -59,7 +59,7 @@ class BrmaskerDirective {
 }
 BrmaskerDirective.decorators = [
     { type: Directive, args: [{
-                selector: '[brmasker]' // Attribute selector
+                selector: '[brmasker]'
             },] },
 ];
 /**
@@ -67,7 +67,7 @@ BrmaskerDirective.decorators = [
  */
 BrmaskerDirective.ctorParameters = () => [];
 BrmaskerDirective.propDecorators = {
-    'brmasker': [{ type: Input, args: ['brmasker',] },],
+    'brmasker': [{ type: Input },],
     'inputChanged': [{ type: HostListener, args: ['keyup', ['$event'],] },],
 };
 
@@ -76,7 +76,7 @@ class BrmaskerModule {
 BrmaskerModule.decorators = [
     { type: NgModule, args: [{
                 imports: [
-                    CommonModule,
+                    CommonModule
                 ],
                 exports: [
                     BrmaskerDirective

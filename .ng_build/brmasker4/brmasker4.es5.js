@@ -59,7 +59,7 @@ var BrmaskerDirective = (function () {
 }());
 BrmaskerDirective.decorators = [
     { type: Directive, args: [{
-                selector: '[brmasker]' // Attribute selector
+                selector: '[brmasker]'
             },] },
 ];
 /**
@@ -67,7 +67,7 @@ BrmaskerDirective.decorators = [
  */
 BrmaskerDirective.ctorParameters = function () { return []; };
 BrmaskerDirective.propDecorators = {
-    'brmasker': [{ type: Input, args: ['brmasker',] },],
+    'brmasker': [{ type: Input },],
     'inputChanged': [{ type: HostListener, args: ['keyup', ['$event'],] },],
 };
 var BrmaskerModule = (function () {
@@ -78,7 +78,7 @@ var BrmaskerModule = (function () {
 BrmaskerModule.decorators = [
     { type: NgModule, args: [{
                 imports: [
-                    CommonModule,
+                    CommonModule
                 ],
                 exports: [
                     BrmaskerDirective

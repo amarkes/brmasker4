@@ -2,6 +2,6 @@ export declare class BrmaskerDirective {
     brmasker: any;
     inputChanged(event: any): void;
     constructor();
-    private onInput(value);
-    private formataCampo(campo, Mascara, tamanho);
+    onInput(value: any): string;
+    formataCampo(campo: string, Mascara: string, tamanho: number): string;
 }

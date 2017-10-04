@@ -6,7 +6,7 @@ export class BrmaskerModule {
 BrmaskerModule.decorators = [
     { type: NgModule, args: [{
                 imports: [
-                    CommonModule,
+                    CommonModule
                 ],
                 exports: [
                     BrmaskerDirective
