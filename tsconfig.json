@@ -1,38 +1,25 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./dist",
     "module": "es2015",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true,
     "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2017",
-      "dom"
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": true,
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "lib": ["dom", "es2015"],
+    "outDir": "./dist",
+    "baseUrl": "src",
+    "types": [
+      "node"
     ]
   },
-  "files": [
-    "src/app/app.module.ts",
-    "src/app/directives/index.ts",
-    "src/app/directives/brmasker/index.ts",
-    "src/main.ts",
-    "src/index.ts"
-  ],
   "exclude": [
     "node_modules",
     "dist",
     "scripts"
   ],
   "angularCompilerOptions": {
-    "genDir": "aot",
-    "skipMetadataEmit" : true
+    "genDir": "aot"
   }
 }

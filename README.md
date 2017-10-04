@@ -31,11 +31,11 @@ npm install brmasker4 --save
 # Module
 
 ```javascript
-import { BrmaskerModule } from 'brmasker4';
+import { BrMasker4Module } from 'brmasker4';
 
 @NgModule({
   imports: [
-    BrmaskerModule
+    BrMasker4Module
   ],
 })
 
@@ -92,7 +92,7 @@ len --> required / default = 0 / number of length
 ### Build
 
 ```sh
-npm run build:ngc
+npm run build
 ```
 
 ### Publish
