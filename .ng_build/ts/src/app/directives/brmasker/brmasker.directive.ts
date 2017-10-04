@@ -3,7 +3,7 @@ import { Directive, Input, HostListener } from '@angular/core';
   selector: '[brmasker]' // Attribute selector
 })
 export class BrmaskerDirective {
-  @Input('brmasker') brmaskere: any;
+  @Input('brmasker') brmasker: any;
   @HostListener('keyup', ['$event'])
   inputChanged(event: any): void {
     if (event.target.value) {
@@ -13,7 +13,7 @@ export class BrmaskerDirective {
   constructor() {
   }
   private onInput(value: any): void {
-    const ret = this.formataCampo(value, this.brmaskere.mask, this.brmaskere.len);
+    const ret = this.formataCampo(value, this.brmasker.mask, this.brmasker.len);
     return ret;
     // if (ret) {
     //   this.element.nativeElement.value = ret;

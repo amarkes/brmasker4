@@ -17,7 +17,7 @@ var BrmaskerDirective = (function () {
      * @return {?}
      */
     BrmaskerDirective.prototype.onInput = function (value) {
-        var /** @type {?} */ ret = this.formataCampo(value, this.brmaskere.mask, this.brmaskere.len);
+        var /** @type {?} */ ret = this.formataCampo(value, this.brmasker.mask, this.brmasker.len);
         return ret;
         // if (ret) {
         //   this.element.nativeElement.value = ret;
@@ -67,7 +67,7 @@ BrmaskerDirective.decorators = [
  */
 BrmaskerDirective.ctorParameters = function () { return []; };
 BrmaskerDirective.propDecorators = {
-    'brmaskere': [{ type: Input, args: ['brmasker',] },],
+    'brmasker': [{ type: Input, args: ['brmasker',] },],
     'inputChanged': [{ type: HostListener, args: ['keyup', ['$event'],] },],
 };
 var BrmaskerModule = (function () {

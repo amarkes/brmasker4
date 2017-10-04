@@ -16,7 +16,7 @@ export class BrmaskerDirective {
      * @return {?}
      */
     onInput(value) {
-        const /** @type {?} */ ret = this.formataCampo(value, this.brmaskere.mask, this.brmaskere.len);
+        const /** @type {?} */ ret = this.formataCampo(value, this.brmasker.mask, this.brmasker.len);
         return ret;
         // if (ret) {
         //   this.element.nativeElement.value = ret;
@@ -65,7 +65,7 @@ BrmaskerDirective.decorators = [
  */
 BrmaskerDirective.ctorParameters = () => [];
 BrmaskerDirective.propDecorators = {
-    'brmaskere': [{ type: Input, args: ['brmasker',] },],
+    'brmasker': [{ type: Input, args: ['brmasker',] },],
     'inputChanged': [{ type: HostListener, args: ['keyup', ['$event'],] },],
 };
 function BrmaskerDirective_tsickle_Closure_declarations() {
@@ -79,6 +79,6 @@ function BrmaskerDirective_tsickle_Closure_declarations() {
     /** @type {?} */
     BrmaskerDirective.propDecorators;
     /** @type {?} */
-    BrmaskerDirective.prototype.brmaskere;
+    BrmaskerDirective.prototype.brmasker;
 }
 //# sourceMappingURL=brmasker.directive.js.map

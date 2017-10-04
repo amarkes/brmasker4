@@ -1,5 +1,5 @@
 export declare class BrmaskerDirective {
-    brmaskere: any;
+    brmasker: any;
     inputChanged(event: any): void;
     constructor();
     private onInput(value);
