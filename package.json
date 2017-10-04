@@ -1,9 +1,9 @@
 {
   "name": "brmasker4",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "license": "MIT",
-  "main": "./dist/src/index.js",
-  "typings": "./dist/src/index.d.ts",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "scripts": {
     "ngc": "ngc",
     "ng": "ng",

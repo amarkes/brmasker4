@@ -16,6 +16,10 @@
       "dom"
     ]
   },
+  "files": [
+    "src/app/index.ts",
+    "src/index.ts"
+  ],
   "exclude": [
     "node_modules",
     "dist",
