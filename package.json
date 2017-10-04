@@ -1,6 +1,6 @@
 {
   "name": "brmasker4",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "license": "MIT",
   "main": "./dist/src/index.js",
   "typings": "./dist/src/index.d.ts",
@@ -54,7 +54,9 @@
     "type": "git",
     "url": "git+https://github.com/amarkes/brmasker4"
   },
-  "keywords": ["mask angular4"],
+  "keywords": [
+    "mask angular4"
+  ],
   "author": "Antonio Marques",
   "bugs": {
     "url": "https://github.com/amarkes/brmasker4/issues"
