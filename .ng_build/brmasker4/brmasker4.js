@@ -1,50 +1,56 @@
-import { Directive, Input, NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-class BrmaskerDirective {
-    constructor() {
-    }
+class HeaderComponent {
+    constructor() { }
     /**
      * @return {?}
      */
     ngOnInit() {
-        console.log(this.brmasker);
     }
 }
-BrmaskerDirective.decorators = [
-    { type: Directive, args: [{
-                selector: '[brmasker]'
+HeaderComponent.decorators = [
+    { type: Component, args: [{
+                selector: 'app-header',
+                template: `
+    <h1>
+      <ng-content></ng-content>
+    </h1>
+  `,
+                styles: [`
+    h1 {
+      color: red; }
+  `]
             },] },
 ];
 /**
  * @nocollapse
  */
-BrmaskerDirective.ctorParameters = () => [];
-BrmaskerDirective.propDecorators = {
-    'brmasker': [{ type: Input },],
-};
+HeaderComponent.ctorParameters = () => [];
 
-class BrmaskerModule {
+class HeaderModule {
 }
-BrmaskerModule.decorators = [
+HeaderModule.decorators = [
     { type: NgModule, args: [{
                 imports: [
                     CommonModule
                 ],
-                exports: [
-                    BrmaskerDirective
+                declarations: [
+                    HeaderComponent
                 ],
-                declarations: [BrmaskerDirective]
+                exports: [
+                    HeaderComponent // <-- this!
+                ]
             },] },
 ];
 /**
  * @nocollapse
  */
-BrmaskerModule.ctorParameters = () => [];
+HeaderModule.ctorParameters = () => [];
 
 /**
  * Generated bundle index. Do not edit.
  */
 
-export { BrmaskerModule, BrmaskerDirective as ɵa };
+export { HeaderModule, HeaderComponent as ɵa };
 //# sourceMappingURL=brmasker4.js.map

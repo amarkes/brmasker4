@@ -1,50 +1,50 @@
-import { Directive, Input, NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-var BrmaskerDirective = (function () {
-    function BrmaskerDirective() {
+var HeaderComponent = (function () {
+    function HeaderComponent() {
     }
     /**
      * @return {?}
      */
-    BrmaskerDirective.prototype.ngOnInit = function () {
-        console.log(this.brmasker);
+    HeaderComponent.prototype.ngOnInit = function () {
     };
-    return BrmaskerDirective;
+    return HeaderComponent;
 }());
-BrmaskerDirective.decorators = [
-    { type: Directive, args: [{
-                selector: '[brmasker]'
+HeaderComponent.decorators = [
+    { type: Component, args: [{
+                selector: 'app-header',
+                template: "\n    <h1>\n      <ng-content></ng-content>\n    </h1>\n  ",
+                styles: ["\n    h1 {\n      color: red; }\n  "]
             },] },
 ];
 /**
  * @nocollapse
  */
-BrmaskerDirective.ctorParameters = function () { return []; };
-BrmaskerDirective.propDecorators = {
-    'brmasker': [{ type: Input },],
-};
-var BrmaskerModule = (function () {
-    function BrmaskerModule() {
+HeaderComponent.ctorParameters = function () { return []; };
+var HeaderModule = (function () {
+    function HeaderModule() {
     }
-    return BrmaskerModule;
+    return HeaderModule;
 }());
-BrmaskerModule.decorators = [
+HeaderModule.decorators = [
     { type: NgModule, args: [{
                 imports: [
                     CommonModule
                 ],
-                exports: [
-                    BrmaskerDirective
+                declarations: [
+                    HeaderComponent
                 ],
-                declarations: [BrmaskerDirective]
+                exports: [
+                    HeaderComponent // <-- this!
+                ]
             },] },
 ];
 /**
  * @nocollapse
  */
-BrmaskerModule.ctorParameters = function () { return []; };
+HeaderModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { BrmaskerModule, BrmaskerDirective as ɵa };
+export { HeaderModule, HeaderComponent as ɵa };
 //# sourceMappingURL=brmasker4.es5.js.map

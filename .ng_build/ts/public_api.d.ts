@@ -1,1 +1,1 @@
-export * from './src/app/directives/brmasker/brmasker.module';
+export * from './src/app/modules/header/header.module';

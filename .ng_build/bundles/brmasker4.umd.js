@@ -4,52 +4,52 @@
 	(factory((global.brmasker4 = {}),global.ng.core,global.ng.common));
 }(this, (function (exports,core,common) { 'use strict';
 
-var BrmaskerDirective = (function () {
-    function BrmaskerDirective() {
+var HeaderComponent = (function () {
+    function HeaderComponent() {
     }
     /**
      * @return {?}
      */
-    BrmaskerDirective.prototype.ngOnInit = function () {
-        console.log(this.brmasker);
+    HeaderComponent.prototype.ngOnInit = function () {
     };
-    return BrmaskerDirective;
+    return HeaderComponent;
 }());
-BrmaskerDirective.decorators = [
-    { type: core.Directive, args: [{
-                selector: '[brmasker]'
+HeaderComponent.decorators = [
+    { type: core.Component, args: [{
+                selector: 'app-header',
+                template: "\n    <h1>\n      <ng-content></ng-content>\n    </h1>\n  ",
+                styles: ["\n    h1 {\n      color: red; }\n  "]
             },] },
 ];
 /**
  * @nocollapse
  */
-BrmaskerDirective.ctorParameters = function () { return []; };
-BrmaskerDirective.propDecorators = {
-    'brmasker': [{ type: core.Input },],
-};
-var BrmaskerModule = (function () {
-    function BrmaskerModule() {
+HeaderComponent.ctorParameters = function () { return []; };
+var HeaderModule = (function () {
+    function HeaderModule() {
     }
-    return BrmaskerModule;
+    return HeaderModule;
 }());
-BrmaskerModule.decorators = [
+HeaderModule.decorators = [
     { type: core.NgModule, args: [{
                 imports: [
                     common.CommonModule
                 ],
-                exports: [
-                    BrmaskerDirective
+                declarations: [
+                    HeaderComponent
                 ],
-                declarations: [BrmaskerDirective]
+                exports: [
+                    HeaderComponent // <-- this!
+                ]
             },] },
 ];
 /**
  * @nocollapse
  */
-BrmaskerModule.ctorParameters = function () { return []; };
+HeaderModule.ctorParameters = function () { return []; };
 
-exports.BrmaskerModule = BrmaskerModule;
-exports.ɵa = BrmaskerDirective;
+exports.HeaderModule = HeaderModule;
+exports.ɵa = HeaderComponent;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

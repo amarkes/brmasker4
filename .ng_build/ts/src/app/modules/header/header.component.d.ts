@@ -1,6 +1,5 @@
 import { OnInit } from '@angular/core';
-export declare class BrmaskerDirective implements OnInit {
-    brmasker: any;
+export declare class HeaderComponent implements OnInit {
     constructor();
     ngOnInit(): void;
 }

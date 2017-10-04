@@ -1,6 +1,6 @@
 /**
  * Generated bundle index. Do not edit.
  */
-export { BrmaskerModule } from './public_api';
-export { BrmaskerDirective as ɵa } from './src/app/directives/brmasker/brmasker.directive';
+export { HeaderModule } from './public_api';
+export { HeaderComponent as ɵa } from './src/app/modules/header/header.component';
 //# sourceMappingURL=brmasker4.js.map
