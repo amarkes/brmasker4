@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { ExempleComponent } from './exemple.component';
 import { BrmaskerModule } from './directives/brmasker/brmasker.module';
@@ -8,11 +8,15 @@ import { BrmaskerModule } from './directives/brmasker/brmasker.module';
   declarations: [
     ExempleComponent
   ],
-  imports: [
-    BrowserModule,
+  exports: [
     BrmaskerModule
   ],
-  providers: [],
+  imports: [
+    BrowserModule
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
   bootstrap: [ExempleComponent]
 })
 export class BrMaske4Module { }
