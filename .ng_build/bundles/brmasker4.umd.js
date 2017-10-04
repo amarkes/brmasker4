@@ -8,56 +8,10 @@ var BrmaskerDirective = (function () {
     function BrmaskerDirective() {
     }
     /**
-     * @param {?} event
      * @return {?}
      */
-    BrmaskerDirective.prototype.inputChanged = function (event) {
-        if (event.target.value) {
-            event.target.value = this.onInput(event.target.value);
-        }
-    };
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    BrmaskerDirective.prototype.onInput = function (value) {
-        var /** @type {?} */ ret = this.formataCampo(value, this.brmasker.mask, this.brmasker.len);
-        return ret;
-        // if (ret) {
-        //   this.element.nativeElement.value = ret;
-        // }
-    };
-    /**
-     * @param {?} campo
-     * @param {?} Mascara
-     * @param {?} tamanho
-     * @return {?}
-     */
-    BrmaskerDirective.prototype.formataCampo = function (campo, Mascara, tamanho) {
-        var /** @type {?} */ boleanoMascara;
-        var /** @type {?} */ exp = /\-|\.|\/|\(|\)|\,|\*|\+|\@|\#|\R|\$|\&|\%| /g;
-        var /** @type {?} */ campoSoNumeros = campo.toString().replace(exp, '');
-        var /** @type {?} */ posicaoCampo = 0;
-        var /** @type {?} */ NovoValorCampo = '';
-        var /** @type {?} */ TamanhoMascara = campoSoNumeros.length;
-        for (var /** @type {?} */ i = 0; i < TamanhoMascara; i++) {
-            if (i < tamanho) {
-                boleanoMascara = ((Mascara.charAt(i) === '-') || (Mascara.charAt(i) === '.') || (Mascara.charAt(i) === '/'));
-                boleanoMascara = boleanoMascara || ((Mascara.charAt(i) === '(') || (Mascara.charAt(i) === ')') || (Mascara.charAt(i) === ' '));
-                boleanoMascara = boleanoMascara || ((Mascara.charAt(i) === ',') || (Mascara.charAt(i) === '*') || (Mascara.charAt(i) === '+'));
-                boleanoMascara = boleanoMascara || ((Mascara.charAt(i) === '@') || (Mascara.charAt(i) === '#') || (Mascara.charAt(i) === 'R'));
-                boleanoMascara = boleanoMascara || ((Mascara.charAt(i) === '$') || (Mascara.charAt(i) === '&') || (Mascara.charAt(i) === '%'));
-                if (boleanoMascara) {
-                    NovoValorCampo += Mascara.charAt(i);
-                    TamanhoMascara++;
-                }
-                else {
-                    NovoValorCampo += campoSoNumeros.charAt(posicaoCampo);
-                    posicaoCampo++;
-                }
-            }
-        }
-        return NovoValorCampo;
+    BrmaskerDirective.prototype.ngOnInit = function () {
+        console.log(this.brmasker);
     };
     return BrmaskerDirective;
 }());
@@ -72,7 +26,6 @@ BrmaskerDirective.decorators = [
 BrmaskerDirective.ctorParameters = function () { return []; };
 BrmaskerDirective.propDecorators = {
     'brmasker': [{ type: core.Input },],
-    'inputChanged': [{ type: core.HostListener, args: ['keyup', ['$event'],] },],
 };
 var BrmaskerModule = (function () {
     function BrmaskerModule() {

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <h1>Welcome to app!</h1>
-    <!-- <input type="text" name="cpf" placeholder="CPF" [brmasker]="{mask:'000.000.000-00', len:14}" value=""> -->
+    <input type="text" name="cpf" placeholder="CPF" [brmasker]="'teste'" value="">
   `,
   styles: [`
 

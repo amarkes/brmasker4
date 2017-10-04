@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { BrmaskerModule } from './directives/brmasker/brmasker.module';
+import { HeaderModule } from './modules/header/header.module';
 
 @NgModule({
   declarations: [
@@ -10,10 +10,7 @@ import { BrmaskerModule } from './directives/brmasker/brmasker.module';
   ],
   imports: [
     BrowserModule,
-    BrmaskerModule
-  ],
-  exports: [
-    BrmaskerModule
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

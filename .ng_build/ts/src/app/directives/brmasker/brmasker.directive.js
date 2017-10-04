@@ -1,58 +1,12 @@
-import { Directive, Input, HostListener } from '@angular/core';
+import { Directive, Input } from '@angular/core';
 export class BrmaskerDirective {
     constructor() {
     }
     /**
-     * @param {?} event
      * @return {?}
      */
-    inputChanged(event) {
-        if (event.target.value) {
-            event.target.value = this.onInput(event.target.value);
-        }
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    onInput(value) {
-        const /** @type {?} */ ret = this.formataCampo(value, this.brmasker.mask, this.brmasker.len);
-        return ret;
-        // if (ret) {
-        //   this.element.nativeElement.value = ret;
-        // }
-    }
-    /**
-     * @param {?} campo
-     * @param {?} Mascara
-     * @param {?} tamanho
-     * @return {?}
-     */
-    formataCampo(campo, Mascara, tamanho) {
-        let /** @type {?} */ boleanoMascara;
-        const /** @type {?} */ exp = /\-|\.|\/|\(|\)|\,|\*|\+|\@|\#|\R|\$|\&|\%| /g;
-        const /** @type {?} */ campoSoNumeros = campo.toString().replace(exp, '');
-        let /** @type {?} */ posicaoCampo = 0;
-        let /** @type {?} */ NovoValorCampo = '';
-        let /** @type {?} */ TamanhoMascara = campoSoNumeros.length;
-        for (let /** @type {?} */ i = 0; i < TamanhoMascara; i++) {
-            if (i < tamanho) {
-                boleanoMascara = ((Mascara.charAt(i) === '-') || (Mascara.charAt(i) === '.') || (Mascara.charAt(i) === '/'));
-                boleanoMascara = boleanoMascara || ((Mascara.charAt(i) === '(') || (Mascara.charAt(i) === ')') || (Mascara.charAt(i) === ' '));
-                boleanoMascara = boleanoMascara || ((Mascara.charAt(i) === ',') || (Mascara.charAt(i) === '*') || (Mascara.charAt(i) === '+'));
-                boleanoMascara = boleanoMascara || ((Mascara.charAt(i) === '@') || (Mascara.charAt(i) === '#') || (Mascara.charAt(i) === 'R'));
-                boleanoMascara = boleanoMascara || ((Mascara.charAt(i) === '$') || (Mascara.charAt(i) === '&') || (Mascara.charAt(i) === '%'));
-                if (boleanoMascara) {
-                    NovoValorCampo += Mascara.charAt(i);
-                    TamanhoMascara++;
-                }
-                else {
-                    NovoValorCampo += campoSoNumeros.charAt(posicaoCampo);
-                    posicaoCampo++;
-                }
-            }
-        }
-        return NovoValorCampo;
+    ngOnInit() {
+        console.log(this.brmasker);
     }
 }
 BrmaskerDirective.decorators = [
@@ -66,7 +20,6 @@ BrmaskerDirective.decorators = [
 BrmaskerDirective.ctorParameters = () => [];
 BrmaskerDirective.propDecorators = {
     'brmasker': [{ type: Input },],
-    'inputChanged': [{ type: HostListener, args: ['keyup', ['$event'],] },],
 };
 function BrmaskerDirective_tsickle_Closure_declarations() {
     /** @type {?} */
