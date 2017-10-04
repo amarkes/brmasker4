@@ -15,4 +15,4 @@ import { BrmaskerModule } from './directives/brmasker/brmasker.module';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class BrMaske4Module { }
