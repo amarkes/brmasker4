@@ -1,18 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { ExempleComponent } from './exemple.component';
 import { BrmaskerModule } from './directives/brmasker/brmasker.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    ExempleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrmaskerModule
   ],
-  exports: [ BrmaskerModule ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ExempleComponent]
 })
 export class BrMaske4Module { }

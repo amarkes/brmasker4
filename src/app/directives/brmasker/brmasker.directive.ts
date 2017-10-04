@@ -1,7 +1,7 @@
 
 import { Directive, Input, HostListener } from '@angular/core';
 @Directive({
-  selector: '[brMasker]',
+  selector: '[brmasker]',
 })
 export class BrmaskerDirective {
   @Input() brmasker: any;

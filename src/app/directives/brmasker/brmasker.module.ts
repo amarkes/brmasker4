@@ -5,7 +5,6 @@ import { BrmaskerDirective } from './brmasker.directive';
 @NgModule({
   imports: [ CommonModule ],
   exports: [ BrmaskerDirective ],
-  declarations: [ BrmaskerDirective ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  declarations: [ BrmaskerDirective ]
 })
 export class BrmaskerModule { }

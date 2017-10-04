@@ -92,7 +92,7 @@ len --> required / default = 0 / number of length
 ### Build
 
 ```sh
-npm run buildngc
+npm run build:ngc
 ```
 
 ### Publish

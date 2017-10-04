@@ -1,6 +1,6 @@
 {
   "name": "brmasker4",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "license": "MIT",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -9,7 +9,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "buildngc": "rm -rf aot dist && npm run ngc",
+    "build:ngc": "rm -rf aot dist && npm run ngc",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
