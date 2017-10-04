@@ -22,5 +22,3 @@ before_script:
 - npm install -g karma
 - npm install
 - npm run build
-
-script: karma start config/karma.conf.js --single-run

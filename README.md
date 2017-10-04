@@ -4,7 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/amarkes/brmasker4.svg)](https://github.com/amarkes/brmasker4/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/amarkes/brmasker4.svg)](https://github.com/amarkes/brmasker4/network)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/amarkes/brmasker4/master/LICENSE)
-[![Build Status](https://travis-ci.org/amarkes/brmasker-ionic.svg?branch=master)](https://travis-ci.org/amarkes/brmasker4)
+[![Build Status](https://travis-ci.org/amarkes/brmasker4.svg?branch=master)](https://travis-ci.org/amarkes/brmasker4)
 
 
 return custom mask in input for angular 4
