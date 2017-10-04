@@ -4,3 +4,7 @@ node_modules
 .npmignore
 tsconfig.json
 aot
+LICENSE
+.travis.yml
+.angular-cli.json
+.editorconfig

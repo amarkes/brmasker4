@@ -1,6 +1,6 @@
 {
   "name": "brmasker4",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "Mask for angular 4",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
