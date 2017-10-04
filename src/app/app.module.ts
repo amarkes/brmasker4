@@ -9,9 +9,9 @@ import { BrmaskerModule } from './directives/brmasker/brmasker.module';
     AppComponent
   ],
   imports: [
-    BrowserModule,
-    BrmaskerModule
+    BrowserModule
   ],
+  exports: [ BrmaskerModule ],
   providers: [],
   bootstrap: [AppComponent]
 })
