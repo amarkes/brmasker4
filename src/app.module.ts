@@ -1,6 +1,5 @@
-import { Observable } from 'rxjs';
+import { CommonModule } from '@angular/common';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { BrMaskerDirective } from './directives/brmasker4';
 
@@ -12,7 +11,7 @@ import { BrMaskerDirective } from './directives/brmasker4';
     BrMaskerDirective
   ],
   imports: [
-    BrowserModule
+    CommonModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
