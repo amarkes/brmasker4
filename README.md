@@ -42,7 +42,7 @@ import { BrMasker4Module } from 'brmasker4';
 ```
 # Characters
 
-`- . / ( ) , * + @ # R$ $ & %`
+`- . / ( ) , * + @ # $ & %`
 
 # Guide
 

@@ -1,13 +1,13 @@
 {
   "name": "brmasker4",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "Mask for angular 4",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
     "ngc": "ngc",
     "build": "rm -rf aot dist && npm run ngc",
-    "submitGit": "npm push --all && npm push --tags && npm run build && npm publish",
+    "submitGit": "git push --all && git push --tags && npm run build && npm publish",
     "publishPackage": "npm run build && npm publish"
   },
   "repository": {
