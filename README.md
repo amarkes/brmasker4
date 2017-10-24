@@ -40,6 +40,36 @@ import { BrMasker4Module } from 'brmasker4';
 })
 
 ```
+
+# Inputs
+money: boolean
+phone: boolean
+person: boolean
+
+### Exemple for CPF/CNPJ `999.999.999-99` / `99.999.999/9999-99`
+
+### usage
+
+```html
+<input type="text" name="cpf" placeholder="CPF/CNPJ" [brmasker]="{mask:'', len:18}" [person]="true" value="">
+```
+
+### Exemple for Real `999,99`
+
+### usage
+
+```html
+<input type="text" name="money" placeholder="(R$) Real" [brmasker]="{mask:'', len:18}" [person]="money" value="">
+```
+
+### Exemple for Phone `(99) 9999-9999` / `(99) 99999-9999`
+
+### usage
+
+```html
+<input type="text" name="phone" placeholder="Phone" [brmasker]="{mask:'', len:15}" [phone]="money" value="">
+```
+
 # Characters
 
 `- . / ( ) , * + @ # $ & %`
