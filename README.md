@@ -152,12 +152,13 @@ npm publish
 
 # Changelog
 
+### v1.0.1
+
+- fix number in person and phone
+
 ### v1.0.0
 
 - Suport reactive form
-
-
-# Changelog
 
 ### v0.0.29
 
