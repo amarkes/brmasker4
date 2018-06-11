@@ -1,6 +1,6 @@
 {
   "name": "brmasker4",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Mask for angular 4",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -15,24 +15,31 @@
     "url": "git+https://github.com/amarkes/brmasker4"
   },
   "keywords": [
-    "mask for angular 4, mask"
+    "mask for angular 4, mask",
+    "mascara data",
+    "mascara cpf",
+    "mascara cnpj",
+    "mascara telefone",
+    "mascara celular",
+    "mascara cep",
+    "mascara real",
+    "mascara dolar",
+    "mask data",
+    "mask cpf",
+    "mask cnpj",
+    "mask telefone",
+    "mask celular",
+    "mask cep",
+    "mask real",
+    "mask dolar",
+    "mask angular 2",
+    "input angular 2",
+    "angular 2"
   ],
   "author": "Antonio Marques",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/amarkes/brmasker4/issues"
   },
-  "homepage": "https://github.com/amarkes/brmasker4/issues#readme",
-  "devDependencies": {
-    "@angular/common": "4.2.4",
-    "@angular/compiler": "4.2.4",
-    "@angular/compiler-cli": "4.2.4",
-    "@angular/core": "4.2.4",
-    "@angular/forms": "^4.2.4",
-    "@angular/platform-browser": "4.2.4",
-    "@types/node": "6.0.49",
-    "rxjs": "5.4.2",
-    "ts-node": "3.2.0",
-    "typescript": "2.3.3"
-  }
+  "homepage": "https://github.com/amarkes/brmasker4/issues#readme"
 }

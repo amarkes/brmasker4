@@ -41,6 +41,30 @@ import { BrMasker4Module } from 'brmasker4';
 
 ```
 
+# Features
+
+```js
+import { BrMaskerDirective, BrMaskModel } from 'brmasker-ionic-3';
+
+...
+
+constructor(public brMaskerDirective: BrMaskerDirective) {}
+
+...
+
+protected createForm(): FormGroup {
+  return new FormGroup({
+    phone: new FormControl(this.createPhone())
+  });
+}
+
+private createPhone(): string {
+  const config: BrMaskModel = new BrMaskModel();
+  config.phone = true;
+  return this.brMaskerDirective.writeCreateValue('99999999999', config);
+}
+```
+
 # Inputs
 
 * brmasker: BrModel
@@ -56,13 +80,16 @@ import { BrMasker4Module } from 'brmasker4';
 ```
 
 
-| Name | type | info |
+ Name | type | info |
 | ------ | ------ | ------ |
 | mask | string | Optional |
 | len | string | Optional |
 | money | boolean | Optional |
+| decimal| number | Optional for 'money', default '2' |
 | phone | boolean | Optional |
 | person | boolean | Optional |
+| percent | boolean | Optional |
+| type | string | Optional default 'all' |
 
 
 ### Exemple for CPF/CNPJ `999.999.999-99` / `99.999.999/9999-99`
@@ -150,7 +177,20 @@ npm run build
 npm publish
 ```
 
+# Versions
+
+- for angular 6 using version 1.0.2
+
+- for angular 5 using version 1.0.1
+
+
 # Changelog
+
+### v1.0.2
+
+- support for angular 6
+
+- news updates
 
 ### v1.0.1
 
