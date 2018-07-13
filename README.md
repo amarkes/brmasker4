@@ -1,3 +1,8 @@
+# Lib is deprecated 
+
+We're sorry, but we'll focus only on one [library](https://github.com/amarkes/br-masker-ionic-3)
+
+
 # brmasker4
 
 [![GitHub issues](https://img.shields.io/github/issues/amarkes/brmasker4.svg)](https://github.com/amarkes/brmasker4/issues)
