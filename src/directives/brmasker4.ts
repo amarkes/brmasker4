@@ -188,10 +188,10 @@ export class BrMaskerDirective implements OnInit, ControlValueAccessor {
 
   private peapollMask(v: any): void {
     let n = v;
-    if (n.length > 14) {
+    n = n.replace(/\D/gi, '');
+    if (n.length >= 14) {
       this.brmasker.len = 18;
-      this.brmasker.mask = '99.999.999/9999-99';
-      n = n.replace(/\D/gi, '');
+      this.brmasker.mask = '99.999.999/9999-99';      
       n = n.replace(/(\d{2})(\d)/gi, '$1.$2');
       n = n.replace(/(\d{3})(\d)/gi, '$1.$2');
       n = n.replace(/(\d{3})(\d)/gi, '$1/$2');
@@ -199,8 +199,7 @@ export class BrMaskerDirective implements OnInit, ControlValueAccessor {
       n = n.replace(/(\d{2})(\d{1,2})$/gi, '$1$2');
     } else {
       this.brmasker.len = 14;
-      this.brmasker.mask = '999.999.999-99';
-      n = n.replace(/\D/gi, '');
+      this.brmasker.mask = '999.999.999-99';      
       n = n.replace(/(\d{3})(\d)/gi, '$1.$2');
       n = n.replace(/(\d{3})(\d)/gi, '$1.$2');
       n = n.replace(/(\d{3})(\d{1,2})$/gi, '$1-$2');
